@@ -13,7 +13,7 @@ using Kompas6API5;
 #endif
 using Kompas6Constants;
 using Kompas6Constants3D;
-using KAPITypes;
+//using KAPITypes;
 using KompasAPI7;
 using System.Windows.Forms;
 using ClassKMD;
@@ -386,14 +386,14 @@ namespace Vedomosts
                 return;
             }
 
-            if (stamp.ksOpenStamp()==1)
+            /*if (stamp.ksOpenStamp()==1)
             {
                 stamp.ksColumnNumber(2);
 
                 stamp.ksTextLine(kompasClass.TextItemParam(ms.getDesignMS()));
 
                 stamp.ksCloseStamp();
-            }
+            }*/
 
             ISheetFormat SheetFormat = kompasClass.GetSheetFormatDrawing(doc2d); // получить интерфейс формата чертежа
             if (SheetFormat == null)
@@ -467,8 +467,8 @@ namespace Vedomosts
                 return;
             }
 
-            kompasClass.SaveCDW_in_Rastr(doc2d);
-            kompasClass.CloseDrawing(doc2d);
+            //kompasClass.SaveCDW_in_Rastr(doc2d);
+            //kompasClass.CloseDrawing(doc2d);
             EventProjectClass.EventValueProgressHandler(0);
         }
 

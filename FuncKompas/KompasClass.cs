@@ -12,7 +12,7 @@ using Kompas6API5;
 #endif
 using Kompas6Constants;
 using Kompas6Constants3D;
-using KAPITypes;
+//using KAPITypes;
 using KompasAPI7;
 using System.Windows.Forms;
 

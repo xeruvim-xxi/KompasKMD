@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Kompas6Constants;
 using Kompas6Constants3D;
-using KAPITypes;
+//using KAPITypes;
 using KompasAPI7;
 using FuncKompas;
 using ClassKMD;

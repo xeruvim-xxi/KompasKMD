@@ -16,7 +16,7 @@ using System.Windows.Forms;
 using System.Collections;
 using Kompas6Constants;
 using Kompas6Constants3D;
-using KAPITypes;
+//using KAPITypes;
 using KompasAPI7;
 using SolidWorks.Interop.sldworks;
 using SolidWorks.Interop.swcommands;
@@ -35,7 +35,6 @@ namespace KompasKMD
    
     public partial class FormKMD_Proj  : Form
     {
-        LicenseClass license = new LicenseClass();
         SettingAppClass SettingApp = new SettingAppClass();
         KompasObject kompas;
         bool flagKompas = false; // true - есть подлючение, false - нет подключения к Компасу
@@ -1230,17 +1229,7 @@ namespace KompasKMD
         }
 
         private void bCreateTablesAllLists_Click(object sender, EventArgs e)
-        {
-            if (license == null)
-            {
-                MessageBox.Show("Отсутствует лицензия!");
-                return;
-            }
-            if (license.KodLic != "FULL_")
-            {
-                MessageBox.Show("Приобретите лицезию на полную версию приложения Компас-КМД!");
-                return;
-            }
+        {            
             if (flagKompas)
             {
                 KompasClass komp = new KompasClass(kompas, currentProj.getPathDirProj());
@@ -1269,17 +1258,7 @@ namespace KompasKMD
         }
 
         private void bCreateVedomostMS_Click(object sender, EventArgs e) // создать таблицы на МС
-        {
-            if (license == null)
-            {
-                MessageBox.Show("Отсутствует лицензия!");
-                return;
-            }
-            if (license.KodLic != "FULL_")
-            {
-                MessageBox.Show("Приобретите лицезию на полную версию приложения Компас-КМД!");
-                return;
-            }
+        {           
             if (flagKompas)
             {
                 KompasClass komp = new KompasClass(kompas, currentProj.getPathDirProj());
@@ -1300,16 +1279,6 @@ namespace KompasKMD
 
         private void bCreateVedomostOD_Click(object sender, EventArgs e) // создать ведомости на заглавном листе
         {
-            if (license == null)
-            {
-                MessageBox.Show("Отсутствует лицензия!");
-                return;
-            }
-            if (license.KodLic != "FULL_")
-            {
-                MessageBox.Show("Приобретите лицезию на полную версию приложения Компас-КМД!");
-                return;
-            }
             if (flagKompas)
             {
                 KompasClass komp = new KompasClass(kompas, currentProj.getPathDirProj());
