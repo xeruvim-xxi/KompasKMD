@@ -878,28 +878,28 @@ namespace Vedomosts
                 return;
             }
 
-            ksStamp stamp = kompasClass.GetStamp(doc2d);
-            if (stamp == null)
-            {
-                //MessageBox.Show("Не удалось подключить интерфейс IStamp.");
-                return;
-            }
+            //ksStamp stamp = kompasClass.GetStamp(doc2d);
+            //if (stamp == null)
+            //{
+            //    //MessageBox.Show("Не удалось подключить интерфейс IStamp.");
+            //    return;
+            //}
 
-            if (stamp.ksOpenStamp() == 1)
-            {
-                stamp.ksColumnNumber(2);
+            //if (stamp.ksOpenStamp() == 1)
+            //{
+            //    stamp.ksColumnNumber(2);
 
-                stamp.ksTextLine(kompasClass.TextItemParam(ms.getDesignMS()));
+            //    stamp.ksTextLine(kompasClass.TextItemParam(ms.getDesignMS()));
 
-                stamp.ksCloseStamp();
-            }
+            //    stamp.ksCloseStamp();
+            //}
 
-            ISheetFormat SheetFormat = kompasClass.GetSheetFormatDrawing(doc2d); // получить интерфейс формат чертежа
-            if (SheetFormat == null)
-            {
-                //MessageBox.Show("Не удалось подключить интерфейс ISheetFormat.");
-                return;
-            }
+            //ISheetFormat SheetFormat = kompasClass.GetSheetFormatDrawing(doc2d); // получить интерфейс формат чертежа
+            //if (SheetFormat == null)
+            //{
+            //    //MessageBox.Show("Не удалось подключить интерфейс ISheetFormat.");
+            //    return;
+            //}
 
             IDrawingTables Tables = kompasClass.GetTables(doc2d, "Ведомости МС"); // коллекция таблиц
             if (Tables == null)
