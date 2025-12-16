@@ -576,6 +576,9 @@ namespace KompasKMD
             {
                 return;
             }
+            ArrayMSInProj.Sort(delegate(MountingSchemeClass ms1, MountingSchemeClass ms2){
+                return string.Compare(ms1.getDesignMS(), ms2.getDesignMS());
+            });
             ArrayMSInProj.ForEach(FillVedomostMS);
             if (indexCurrentMS == -1)
             {
@@ -588,13 +591,7 @@ namespace KompasKMD
                 if (!(ListOEInCurrMS == null))
                 {
                     ListOEInCurrMS.Sort(delegate (ListOEClass list1, ListOEClass list2) {
-                        string[] txtL1 = list1.getDesignList().Split(new char[] {' '});
-                        string[] txtL2 = list2.getDesignList().Split(new char[] { ' ' });
-                        int c1 = Convert.ToInt32(txtL1[1]);
-                        int c2 = Convert.ToInt32(txtL2[1]);
-                        if (c1 == c2) { return 0; };
-                        if (c1 < c2) { return -1; };
-                        return 1;
+                        return string.Compare(list1.getDesignList(), list2.getDesignList());
                     });
                     ListOEInCurrMS.ForEach(FillVedomostListOE);
                 }
