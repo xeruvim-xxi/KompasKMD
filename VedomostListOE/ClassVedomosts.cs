@@ -110,7 +110,7 @@ namespace Vedomosts
             ((IText)(Table.get_Cell(2, 3).Text)).Str = "н";
             ((IText)(Table.get_Cell(1, 4).Text)).Str = "Сечение";
             ((IText)(Table.get_Cell(1, 5).Text)).Str = "Длина,\nмм";
-            ((IText)(Table.get_Cell(1, 6).Text)).Str = "Вес, кгс";
+            ((IText)(Table.get_Cell(1, 6).Text)).Str = "Масса, кг";
             ((IText)(Table.get_Cell(2, 6).Text)).Str = "одной\nдетали";
             ((IText)(Table.get_Cell(2, 7).Text)).Str = "всех";
             ((IText)(Table.get_Cell(2, 8).Text)).Str = "элемента";
@@ -301,7 +301,7 @@ namespace Vedomosts
             ((IText)(Table.get_Cell(0, 0).Text)).Str = "Ведомость отправочных элементов";
             ((IText)(Table.get_Cell(1, 0).Text)).Str = "Марка\nэлемента";
             ((IText)(Table.get_Cell(1, 1).Text)).Str = "Кол-во шт.";
-            ((IText)(Table.get_Cell(1, 2).Text)).Str = "Вес, кгс";
+            ((IText)(Table.get_Cell(1, 2).Text)).Str = "Масса, кг";
             ((IText)(Table.get_Cell(2, 2).Text)).Str = "одного\nэлемента";
             ((IText)(Table.get_Cell(2, 3).Text)).Str = "всех";
             ((IText)(Table.get_Cell(kolMarks + 3, 0).Text)).Str = "Итого:";
@@ -618,7 +618,7 @@ namespace Vedomosts
             ((IText)(Table.get_Cell(0, 0).Text)).Str = "Ведомость монтажных схем";
             ((IText)(Table.get_Cell(1, 0).Text)).Str = "Обозначение\nлиста";
             ((IText)(Table.get_Cell(1, 1).Text)).Str = "Наименование схемы";
-            ((IText)(Table.get_Cell(1, 2).Text)).Str = "Вес, кгс";
+            ((IText)(Table.get_Cell(1, 2).Text)).Str = "Масса, кг";
             ((IText)(Table.get_Cell(2, 2).Text)).Str = "конст-\nрукции";
             ((IText)(Table.get_Cell(2, 3).Text)).Str = "мети-\nзов";
             ((IText)(Table.get_Cell(2, 4).Text)).Str = "свар-\nных\nмонт.\nшвов";
@@ -753,7 +753,7 @@ namespace Vedomosts
                 }
                 ((IText)(CaptionTable.get_Cell(1, 0).Text)).Str = "Обозначение\nлиста";
                 ((IText)(CaptionTable.get_Cell(1, 1).Text)).Str = "Наименование";
-                ((IText)(CaptionTable.get_Cell(1, 2).Text)).Str = "Вес, кгс";
+                ((IText)(CaptionTable.get_Cell(1, 2).Text)).Str = "Масса, кг";
                 ((IText)(CaptionTable.get_Cell(1, 3).Text)).Str = "Примечание";
                 DrawingCaptionTable.Update();
                 // установка текста шапки таблицы
@@ -848,7 +848,7 @@ namespace Vedomosts
             ((ICellBoundaries)(AllMassTable.get_Range(0, 0, 0, 3)).CellsBoundaries).LineStyle[ksCellBoundariesEnum.ksCBExternalBorders] = ksCurveStyleEnum.ksCSNormal;
             ((ICellBoundaries)(AllMassTable.get_Range(0, 0, 0, 1)).CellsBoundaries).LineStyle[ksCellBoundariesEnum.ksCBExternalBorders] = ksCurveStyleEnum.ksCSNormal;
             // установка границы
-            ((IText)(AllMassTable.get_Cell(0, 0).Text)).Str = "Итого, кгс";
+            ((IText)(AllMassTable.get_Cell(0, 0).Text)).Str = "Итого, кг";
             ((IText)(AllMassTable.get_Cell(0, 1).Text)).Str = massAllLists.ToString("N0");
             DrawingAllMassTable.Update();
             // таблица итого
@@ -1073,7 +1073,7 @@ namespace Vedomosts
                 ((IText)(CaptionTable.get_Cell(1, 0).Text)).Str = "Марка\nэлемен-\nта";
                 ((IText)(CaptionTable.get_Cell(1, 1).Text)).Str = "Наименование\nэлемента";
                 ((IText)(CaptionTable.get_Cell(1, 2).Text)).Str = "Кол-во\nэле-\nмен-\nтов";
-                ((IText)(CaptionTable.get_Cell(1, 3).Text)).Str = "Вес, кгс";
+                ((IText)(CaptionTable.get_Cell(1, 3).Text)).Str = "Масса, кг";
                 ((IText)(CaptionTable.get_Cell(2, 3).Text)).Str = "эле-\nмента";
                 ((IText)(CaptionTable.get_Cell(2, 4).Text)).Str = "всех\nэлемен-\nтов";
                 ((IText)(CaptionTable.get_Cell(1, 5).Text)).Str = "№ листа";
@@ -1320,7 +1320,7 @@ namespace Vedomosts
             ((IText)(Table.get_Cell(1, 1).Text)).Str = "Толщина\nпакета\nмм";
             ((IText)(Table.get_Cell(1, 2).Text)).Str = "Длина\nмм";
             ((IText)(Table.get_Cell(1, 3).Text)).Str = "Кол-во\nшт.";
-            ((IText)(Table.get_Cell(1, 4).Text)).Str = "Вес\nкгс";
+            ((IText)(Table.get_Cell(1, 4).Text)).Str = "Масса\nкг";
             ((IText)(Table.get_Cell(1, 5).Text)).Str = "ГОСТ";
             ((IText)(Table.get_Cell(1, 6).Text)).Str = "Класс\nпроч-\nности\nболта";
             ((IText)(Table.get_Cell(1, 7).Text)).Str = "Примечание";
@@ -1442,8 +1442,8 @@ namespace Vedomosts
             ((IText)(Table.get_Cell(0, 0).Text)).Str = "Спецификация металлопроката";
             ((IText)(Table.get_Cell(1, 0).Text)).Str = "Профиль, ГОСТ или ТУ";
             ((IText)(Table.get_Cell(1, 1).Text)).Str = "Марка стали";
-            ((IText)(Table.get_Cell(1, 2).Text)).Str = "Вес, кгс";
-            ((IText)(Table.get_Cell(row-1, 0).Text)).Str = "Всего, кгс";
+            ((IText)(Table.get_Cell(1, 2).Text)).Str = "Масса, кг";
+            ((IText)(Table.get_Cell(row-1, 0).Text)).Str = "Всего, кг";
             // установка текста шапки таблицы
             double massAll = 0;
             int i_p = 0;

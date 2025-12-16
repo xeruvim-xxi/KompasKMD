@@ -104,6 +104,7 @@
             this.bCreateTablesAllLists = new System.Windows.Forms.Button();
             this.tPVedomostOEonMS = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.bUpdateMassAllOE = new System.Windows.Forms.Button();
             this.bSettingMarka = new System.Windows.Forms.Button();
             this.bDeleteMarkaOEonMS = new System.Windows.Forms.Button();
             this.bEditMarkaOEonMS = new System.Windows.Forms.Button();
@@ -204,7 +205,6 @@
             this.sS_StatusApp = new System.Windows.Forms.StatusStrip();
             this.tSSL_SredaModel = new System.Windows.Forms.ToolStripStatusLabel();
             this.tlPB_ProgressApp1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.bUpdateMassAllOE = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -276,7 +276,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(291, 210);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 16);
+            this.label7.Size = new System.Drawing.Size(109, 25);
             this.label7.TabIndex = 11;
             this.label7.Text = "Утвердил:";
             // 
@@ -284,14 +284,14 @@
             // 
             this.txtApproved.Location = new System.Drawing.Point(371, 210);
             this.txtApproved.Name = "txtApproved";
-            this.txtApproved.Size = new System.Drawing.Size(300, 22);
+            this.txtApproved.Size = new System.Drawing.Size(300, 30);
             this.txtApproved.TabIndex = 13;
             // 
             // txtTested
             // 
             this.txtTested.Location = new System.Drawing.Point(371, 180);
             this.txtTested.Name = "txtTested";
-            this.txtTested.Size = new System.Drawing.Size(300, 22);
+            this.txtTested.Size = new System.Drawing.Size(300, 30);
             this.txtTested.TabIndex = 12;
             // 
             // label6
@@ -299,7 +299,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(291, 180);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 16);
+            this.label6.Size = new System.Drawing.Size(109, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Проверил:";
             // 
@@ -307,7 +307,7 @@
             // 
             this.txtDeveloped.Location = new System.Drawing.Point(371, 150);
             this.txtDeveloped.Name = "txtDeveloped";
-            this.txtDeveloped.Size = new System.Drawing.Size(300, 22);
+            this.txtDeveloped.Size = new System.Drawing.Size(300, 30);
             this.txtDeveloped.TabIndex = 9;
             // 
             // label5
@@ -315,7 +315,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(276, 150);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 16);
+            this.label5.Size = new System.Drawing.Size(128, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Разработал:";
             // 
@@ -323,7 +323,7 @@
             // 
             this.txtNameOrganiz.Location = new System.Drawing.Point(371, 120);
             this.txtNameOrganiz.Name = "txtNameOrganiz";
-            this.txtNameOrganiz.Size = new System.Drawing.Size(300, 22);
+            this.txtNameOrganiz.Size = new System.Drawing.Size(300, 30);
             this.txtNameOrganiz.TabIndex = 7;
             // 
             // label4
@@ -331,7 +331,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(171, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 16);
+            this.label4.Size = new System.Drawing.Size(277, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Наименование организации:";
             // 
@@ -339,7 +339,7 @@
             // 
             this.txtNameProj.Location = new System.Drawing.Point(371, 90);
             this.txtNameProj.Name = "txtNameProj";
-            this.txtNameProj.Size = new System.Drawing.Size(300, 22);
+            this.txtNameProj.Size = new System.Drawing.Size(300, 30);
             this.txtNameProj.TabIndex = 5;
             // 
             // label3
@@ -347,7 +347,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(196, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 16);
+            this.label3.Size = new System.Drawing.Size(244, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Наименование проекта*:";
             // 
@@ -355,7 +355,7 @@
             // 
             this.txtNameObjStroit.Location = new System.Drawing.Point(371, 60);
             this.txtNameObjStroit.Name = "txtNameObjStroit";
-            this.txtNameObjStroit.Size = new System.Drawing.Size(300, 22);
+            this.txtNameObjStroit.Size = new System.Drawing.Size(300, 30);
             this.txtNameObjStroit.TabIndex = 3;
             // 
             // label2
@@ -363,7 +363,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(101, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(269, 16);
+            this.label2.Size = new System.Drawing.Size(384, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Наименование объекта строительства:";
             // 
@@ -371,7 +371,7 @@
             // 
             this.txtShifrProj.Location = new System.Drawing.Point(371, 30);
             this.txtShifrProj.Name = "txtShifrProj";
-            this.txtShifrProj.Size = new System.Drawing.Size(300, 22);
+            this.txtShifrProj.Size = new System.Drawing.Size(300, 30);
             this.txtShifrProj.TabIndex = 1;
             // 
             // label1
@@ -379,7 +379,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(256, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.Size = new System.Drawing.Size(164, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Шифр проекта*:";
             // 
@@ -410,14 +410,14 @@
             this.txtFolderProj.Location = new System.Drawing.Point(200, 30);
             this.txtFolderProj.Name = "txtFolderProj";
             this.txtFolderProj.ReadOnly = true;
-            this.txtFolderProj.Size = new System.Drawing.Size(461, 22);
+            this.txtFolderProj.Size = new System.Drawing.Size(461, 30);
             this.txtFolderProj.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.richTextBox1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox3.Location = new System.Drawing.Point(3, 628);
+            this.groupBox3.Location = new System.Drawing.Point(3, 619);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1090, 80);
             this.groupBox3.TabIndex = 6;
@@ -428,11 +428,11 @@
             // 
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 18);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 26);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(1084, 59);
+            this.richTextBox1.Size = new System.Drawing.Size(1084, 51);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "1. *Поля обязательные для заполнения.\n2. Папка проекта - это папка, где будут хра" +
     "ниться все файлы проекта.\n3. Общие данные используются для заполнения штампов че" +
@@ -443,7 +443,7 @@
             this.tabControl.Controls.Add(this.tPOD);
             this.tabControl.Controls.Add(this.tPVedomosts);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabControl.Location = new System.Drawing.Point(0, 24);
+            this.tabControl.Location = new System.Drawing.Point(0, 33);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(1104, 740);
@@ -455,10 +455,10 @@
             this.tPOD.Controls.Add(this.groupBox2);
             this.tPOD.Controls.Add(this.groupBox3);
             this.tPOD.Controls.Add(this.groupBox1);
-            this.tPOD.Location = new System.Drawing.Point(4, 25);
+            this.tPOD.Location = new System.Drawing.Point(4, 34);
             this.tPOD.Name = "tPOD";
             this.tPOD.Padding = new System.Windows.Forms.Padding(3);
-            this.tPOD.Size = new System.Drawing.Size(1096, 711);
+            this.tPOD.Size = new System.Drawing.Size(1096, 702);
             this.tPOD.TabIndex = 0;
             this.tPOD.Text = "Общие данные:";
             this.tPOD.UseVisualStyleBackColor = true;
@@ -502,7 +502,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(190, 30);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(176, 16);
+            this.label10.Size = new System.Drawing.Size(251, 25);
             this.label10.TabIndex = 14;
             this.label10.Text = "Путь к заглавному листу:";
             // 
@@ -510,7 +510,7 @@
             // 
             this.txtPathDrawingOD.Location = new System.Drawing.Point(371, 30);
             this.txtPathDrawingOD.Name = "txtPathDrawingOD";
-            this.txtPathDrawingOD.Size = new System.Drawing.Size(300, 22);
+            this.txtPathDrawingOD.Size = new System.Drawing.Size(300, 30);
             this.txtPathDrawingOD.TabIndex = 15;
             // 
             // tPVedomosts
@@ -518,10 +518,10 @@
             this.tPVedomosts.Controls.Add(this.groupBox27);
             this.tPVedomosts.Controls.Add(this.tabControl1);
             this.tPVedomosts.Controls.Add(this.groupBox4);
-            this.tPVedomosts.Location = new System.Drawing.Point(4, 25);
+            this.tPVedomosts.Location = new System.Drawing.Point(4, 34);
             this.tPVedomosts.Name = "tPVedomosts";
             this.tPVedomosts.Padding = new System.Windows.Forms.Padding(3);
-            this.tPVedomosts.Size = new System.Drawing.Size(1096, 711);
+            this.tPVedomosts.Size = new System.Drawing.Size(1096, 702);
             this.tPVedomosts.TabIndex = 1;
             this.tPVedomosts.Text = "Ведомости проекта:";
             this.tPVedomosts.UseVisualStyleBackColor = true;
@@ -546,7 +546,7 @@
             this.cBSelectCurrentMarka.FormattingEnabled = true;
             this.cBSelectCurrentMarka.Location = new System.Drawing.Point(880, 20);
             this.cBSelectCurrentMarka.Name = "cBSelectCurrentMarka";
-            this.cBSelectCurrentMarka.Size = new System.Drawing.Size(200, 24);
+            this.cBSelectCurrentMarka.Size = new System.Drawing.Size(200, 33);
             this.cBSelectCurrentMarka.TabIndex = 4;
             this.cBSelectCurrentMarka.SelectedIndexChanged += new System.EventHandler(this.cBSelectCurrentMarka_SelectedIndexChanged);
             // 
@@ -566,7 +566,7 @@
             this.cBSelectCurrentMS.FormattingEnabled = true;
             this.cBSelectCurrentMS.Location = new System.Drawing.Point(220, 20);
             this.cBSelectCurrentMS.Name = "cBSelectCurrentMS";
-            this.cBSelectCurrentMS.Size = new System.Drawing.Size(200, 24);
+            this.cBSelectCurrentMS.Size = new System.Drawing.Size(200, 33);
             this.cBSelectCurrentMS.TabIndex = 2;
             this.cBSelectCurrentMS.SelectedIndexChanged += new System.EventHandler(this.cBSelectCurrentMS_SelectedIndexChanged);
             // 
@@ -585,12 +585,12 @@
             this.tabControl1.Controls.Add(this.tPVedomostMS);
             this.tabControl1.Controls.Add(this.tPVedomostListOE);
             this.tabControl1.Controls.Add(this.tPVedomostOEonMS);
+            this.tabControl1.Controls.Add(this.tPSpecifOE);
             this.tabControl1.Controls.Add(this.tPVedomostMSh);
             this.tabControl1.Controls.Add(this.tPVedomostMM);
-            this.tabControl1.Controls.Add(this.tPSpecifOE);
             this.tabControl1.Controls.Add(this.tPVedomostSvarZavodSh);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Location = new System.Drawing.Point(3, 56);
+            this.tabControl1.Location = new System.Drawing.Point(3, 47);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1090, 565);
@@ -600,10 +600,10 @@
             // 
             this.tPVedomostMS.Controls.Add(this.groupBox7);
             this.tPVedomostMS.Controls.Add(this.groupBox6);
-            this.tPVedomostMS.Location = new System.Drawing.Point(4, 25);
+            this.tPVedomostMS.Location = new System.Drawing.Point(4, 34);
             this.tPVedomostMS.Name = "tPVedomostMS";
             this.tPVedomostMS.Padding = new System.Windows.Forms.Padding(3);
-            this.tPVedomostMS.Size = new System.Drawing.Size(1082, 536);
+            this.tPVedomostMS.Size = new System.Drawing.Size(1082, 527);
             this.tPVedomostMS.TabIndex = 0;
             this.tPVedomostMS.Text = "Ведомость МС:";
             this.tPVedomostMS.UseVisualStyleBackColor = true;
@@ -615,7 +615,7 @@
             this.groupBox7.Controls.Add(this.bAddMS);
             this.groupBox7.Controls.Add(this.bCreateVedomostMS);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox7.Location = new System.Drawing.Point(3, 478);
+            this.groupBox7.Location = new System.Drawing.Point(3, 469);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(1076, 55);
             this.groupBox7.TabIndex = 1;
@@ -686,10 +686,10 @@
             this.lV_VedomostMS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lV_VedomostMS.FullRowSelect = true;
             this.lV_VedomostMS.HideSelection = false;
-            this.lV_VedomostMS.Location = new System.Drawing.Point(3, 18);
+            this.lV_VedomostMS.Location = new System.Drawing.Point(3, 26);
             this.lV_VedomostMS.MultiSelect = false;
             this.lV_VedomostMS.Name = "lV_VedomostMS";
-            this.lV_VedomostMS.Size = new System.Drawing.Size(1070, 448);
+            this.lV_VedomostMS.Size = new System.Drawing.Size(1070, 440);
             this.lV_VedomostMS.TabIndex = 0;
             this.lV_VedomostMS.UseCompatibleStateImageBehavior = false;
             this.lV_VedomostMS.View = System.Windows.Forms.View.Details;
@@ -707,19 +707,19 @@
             // 
             // colHMassMK
             // 
-            this.colHMassMK.Text = "Вес МК, кгс";
+            this.colHMassMK.Text = "Масса МК, кг";
             this.colHMassMK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colHMassMK.Width = 120;
             // 
             // colHMassMM
             // 
-            this.colHMassMM.Text = "Вес ММ, кгс";
+            this.colHMassMM.Text = "Масса ММ, кг";
             this.colHMassMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colHMassMM.Width = 120;
             // 
             // colHMassMontSvarka
             // 
-            this.colHMassMontSvarka.Text = "Вес МШ, кгс";
+            this.colHMassMontSvarka.Text = "Масса МШ, кг";
             this.colHMassMontSvarka.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colHMassMontSvarka.Width = 120;
             // 
@@ -731,38 +731,39 @@
             // 
             // cM_V_MS
             // 
+            this.cM_V_MS.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.cM_V_MS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSM_OpenModelMS,
             this.TSM_OpenDrawingMS,
             this.toolStripSeparator1,
             this.TSM_DeleteMS});
             this.cM_V_MS.Name = "cM_V_MS";
-            this.cM_V_MS.Size = new System.Drawing.Size(166, 76);
+            this.cM_V_MS.Size = new System.Drawing.Size(221, 106);
             this.cM_V_MS.Opening += new System.ComponentModel.CancelEventHandler(this.cM_V_MS_Opening);
             // 
             // TSM_OpenModelMS
             // 
             this.TSM_OpenModelMS.Name = "TSM_OpenModelMS";
-            this.TSM_OpenModelMS.Size = new System.Drawing.Size(165, 22);
+            this.TSM_OpenModelMS.Size = new System.Drawing.Size(220, 32);
             this.TSM_OpenModelMS.Text = "Открыть модель";
             this.TSM_OpenModelMS.Click += new System.EventHandler(this.TSM_OpenModelMS_Click);
             // 
             // TSM_OpenDrawingMS
             // 
             this.TSM_OpenDrawingMS.Name = "TSM_OpenDrawingMS";
-            this.TSM_OpenDrawingMS.Size = new System.Drawing.Size(165, 22);
+            this.TSM_OpenDrawingMS.Size = new System.Drawing.Size(220, 32);
             this.TSM_OpenDrawingMS.Text = "Открыть чертеж";
             this.TSM_OpenDrawingMS.Click += new System.EventHandler(this.TSM_OpenDrawingMS_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(162, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(217, 6);
             // 
             // TSM_DeleteMS
             // 
             this.TSM_DeleteMS.Name = "TSM_DeleteMS";
-            this.TSM_DeleteMS.Size = new System.Drawing.Size(165, 22);
+            this.TSM_DeleteMS.Size = new System.Drawing.Size(220, 32);
             this.TSM_DeleteMS.Text = "Удалить";
             this.TSM_DeleteMS.Click += new System.EventHandler(this.bDeleteMS_Click);
             // 
@@ -771,10 +772,10 @@
             this.tPVedomostListOE.Controls.Add(this.groupBox9);
             this.tPVedomostListOE.Controls.Add(this.groupBox10);
             this.tPVedomostListOE.Controls.Add(this.groupBox8);
-            this.tPVedomostListOE.Location = new System.Drawing.Point(4, 25);
+            this.tPVedomostListOE.Location = new System.Drawing.Point(4, 34);
             this.tPVedomostListOE.Name = "tPVedomostListOE";
             this.tPVedomostListOE.Padding = new System.Windows.Forms.Padding(3);
-            this.tPVedomostListOE.Size = new System.Drawing.Size(1082, 536);
+            this.tPVedomostListOE.Size = new System.Drawing.Size(1082, 527);
             this.tPVedomostListOE.TabIndex = 1;
             this.tPVedomostListOE.Text = "Ведомость листов ОЭ:";
             this.tPVedomostListOE.UseVisualStyleBackColor = true;
@@ -785,7 +786,7 @@
             this.groupBox9.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox9.Location = new System.Drawing.Point(3, 3);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(800, 475);
+            this.groupBox9.Size = new System.Drawing.Size(800, 466);
             this.groupBox9.TabIndex = 1;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Ведомость листов отправочных элементов:";
@@ -800,9 +801,10 @@
             this.lV_VedomostListOE.ContextMenuStrip = this.cM_V_ListOE;
             this.lV_VedomostListOE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lV_VedomostListOE.FullRowSelect = true;
-            this.lV_VedomostListOE.Location = new System.Drawing.Point(3, 18);
+            this.lV_VedomostListOE.HideSelection = false;
+            this.lV_VedomostListOE.Location = new System.Drawing.Point(3, 26);
             this.lV_VedomostListOE.Name = "lV_VedomostListOE";
-            this.lV_VedomostListOE.Size = new System.Drawing.Size(794, 454);
+            this.lV_VedomostListOE.Size = new System.Drawing.Size(794, 437);
             this.lV_VedomostListOE.TabIndex = 0;
             this.lV_VedomostListOE.UseCompatibleStateImageBehavior = false;
             this.lV_VedomostListOE.View = System.Windows.Forms.View.Details;
@@ -820,7 +822,7 @@
             // 
             // colHMassList
             // 
-            this.colHMassList.Text = "Вес, кгс";
+            this.colHMassList.Text = "Масса, кг";
             this.colHMassList.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colHMassList.Width = 152;
             // 
@@ -832,29 +834,30 @@
             // 
             // cM_V_ListOE
             // 
+            this.cM_V_ListOE.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.cM_V_ListOE.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSM_OpenDrawingListOE,
             this.toolStripSeparator2,
             this.TSM_DeleteListOE});
             this.cM_V_ListOE.Name = "cM_V_ListOE";
-            this.cM_V_ListOE.Size = new System.Drawing.Size(165, 54);
+            this.cM_V_ListOE.Size = new System.Drawing.Size(219, 74);
             // 
             // TSM_OpenDrawingListOE
             // 
             this.TSM_OpenDrawingListOE.Name = "TSM_OpenDrawingListOE";
-            this.TSM_OpenDrawingListOE.Size = new System.Drawing.Size(164, 22);
+            this.TSM_OpenDrawingListOE.Size = new System.Drawing.Size(218, 32);
             this.TSM_OpenDrawingListOE.Text = "Открыть чертеж";
             this.TSM_OpenDrawingListOE.Click += new System.EventHandler(this.TSM_OpenDrawingListOE_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(161, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(215, 6);
             // 
             // TSM_DeleteListOE
             // 
             this.TSM_DeleteListOE.Name = "TSM_DeleteListOE";
-            this.TSM_DeleteListOE.Size = new System.Drawing.Size(164, 22);
+            this.TSM_DeleteListOE.Size = new System.Drawing.Size(218, 32);
             this.TSM_DeleteListOE.Text = "Удалить";
             this.TSM_DeleteListOE.Click += new System.EventHandler(this.bDeleteListOE_Click);
             // 
@@ -864,7 +867,7 @@
             this.groupBox10.Controls.Add(this.bEditListOE);
             this.groupBox10.Controls.Add(this.bAddListOE);
             this.groupBox10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox10.Location = new System.Drawing.Point(3, 478);
+            this.groupBox10.Location = new System.Drawing.Point(3, 469);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(806, 55);
             this.groupBox10.TabIndex = 2;
@@ -908,7 +911,7 @@
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox8.Location = new System.Drawing.Point(809, 3);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(270, 530);
+            this.groupBox8.Size = new System.Drawing.Size(270, 521);
             this.groupBox8.TabIndex = 3;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Отображение ведомостей:";
@@ -937,10 +940,10 @@
             // 
             this.tPVedomostOEonMS.Controls.Add(this.groupBox13);
             this.tPVedomostOEonMS.Controls.Add(this.groupBox12);
-            this.tPVedomostOEonMS.Location = new System.Drawing.Point(4, 25);
+            this.tPVedomostOEonMS.Location = new System.Drawing.Point(4, 34);
             this.tPVedomostOEonMS.Name = "tPVedomostOEonMS";
             this.tPVedomostOEonMS.Padding = new System.Windows.Forms.Padding(3);
-            this.tPVedomostOEonMS.Size = new System.Drawing.Size(1082, 536);
+            this.tPVedomostOEonMS.Size = new System.Drawing.Size(1082, 527);
             this.tPVedomostOEonMS.TabIndex = 2;
             this.tPVedomostOEonMS.Text = "Ведомость ОЭ по МС";
             this.tPVedomostOEonMS.UseVisualStyleBackColor = true;
@@ -953,12 +956,22 @@
             this.groupBox13.Controls.Add(this.bEditMarkaOEonMS);
             this.groupBox13.Controls.Add(this.bAddMarkaOEonMS);
             this.groupBox13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox13.Location = new System.Drawing.Point(3, 478);
+            this.groupBox13.Location = new System.Drawing.Point(3, 469);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(1076, 55);
             this.groupBox13.TabIndex = 2;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Редактировать ведомость:";
+            // 
+            // bUpdateMassAllOE
+            // 
+            this.bUpdateMassAllOE.Location = new System.Drawing.Point(440, 20);
+            this.bUpdateMassAllOE.Name = "bUpdateMassAllOE";
+            this.bUpdateMassAllOE.Size = new System.Drawing.Size(155, 25);
+            this.bUpdateMassAllOE.TabIndex = 4;
+            this.bUpdateMassAllOE.Text = "Обновить вес марок";
+            this.bUpdateMassAllOE.UseVisualStyleBackColor = true;
+            this.bUpdateMassAllOE.Click += new System.EventHandler(this.bUpdateMassAllOE_Click);
             // 
             // bSettingMarka
             // 
@@ -1025,9 +1038,9 @@
             this.lV_VedomostOEonMS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lV_VedomostOEonMS.FullRowSelect = true;
             this.lV_VedomostOEonMS.HideSelection = false;
-            this.lV_VedomostOEonMS.Location = new System.Drawing.Point(3, 18);
+            this.lV_VedomostOEonMS.Location = new System.Drawing.Point(3, 26);
             this.lV_VedomostOEonMS.Name = "lV_VedomostOEonMS";
-            this.lV_VedomostOEonMS.Size = new System.Drawing.Size(1070, 448);
+            this.lV_VedomostOEonMS.Size = new System.Drawing.Size(1070, 440);
             this.lV_VedomostOEonMS.TabIndex = 0;
             this.lV_VedomostOEonMS.UseCompatibleStateImageBehavior = false;
             this.lV_VedomostOEonMS.View = System.Windows.Forms.View.Details;
@@ -1051,13 +1064,13 @@
             // 
             // colHMassElement
             // 
-            this.colHMassElement.Text = "Вес элемента, кгс";
+            this.colHMassElement.Text = "Масса элемента, кг";
             this.colHMassElement.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colHMassElement.Width = 151;
             // 
             // colHMassAllElements
             // 
-            this.colHMassAllElements.Text = "Вес всех элементов, кгс";
+            this.colHMassAllElements.Text = "Масса всех элементов, кг";
             this.colHMassAllElements.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colHMassAllElements.Width = 186;
             // 
@@ -1075,6 +1088,7 @@
             // 
             // cM_V_OEonMS
             // 
+            this.cM_V_OEonMS.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.cM_V_OEonMS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSM_OpenModel_OEonMS,
             this.TSM_OpenDrawing_OEonMS,
@@ -1083,43 +1097,43 @@
             this.toolStripSeparator4,
             this.TSM_Delete_OEonMS});
             this.cM_V_OEonMS.Name = "cM_V_OEonMS";
-            this.cM_V_OEonMS.Size = new System.Drawing.Size(256, 104);
+            this.cM_V_OEonMS.Size = new System.Drawing.Size(359, 144);
             // 
             // TSM_OpenModel_OEonMS
             // 
             this.TSM_OpenModel_OEonMS.Name = "TSM_OpenModel_OEonMS";
-            this.TSM_OpenModel_OEonMS.Size = new System.Drawing.Size(255, 22);
+            this.TSM_OpenModel_OEonMS.Size = new System.Drawing.Size(358, 32);
             this.TSM_OpenModel_OEonMS.Text = "Открыть модель";
             this.TSM_OpenModel_OEonMS.Click += new System.EventHandler(this.TSM_OpenModel_OEonMS_Click);
             // 
             // TSM_OpenDrawing_OEonMS
             // 
             this.TSM_OpenDrawing_OEonMS.Name = "TSM_OpenDrawing_OEonMS";
-            this.TSM_OpenDrawing_OEonMS.Size = new System.Drawing.Size(255, 22);
+            this.TSM_OpenDrawing_OEonMS.Size = new System.Drawing.Size(358, 32);
             this.TSM_OpenDrawing_OEonMS.Text = "Открыть чертеж";
             this.TSM_OpenDrawing_OEonMS.Click += new System.EventHandler(this.TSM_OpenDrawing_OEonMS_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(252, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(355, 6);
             // 
             // TSM_AddOEonSelectOE_OEonMS
             // 
             this.TSM_AddOEonSelectOE_OEonMS.Name = "TSM_AddOEonSelectOE_OEonMS";
-            this.TSM_AddOEonSelectOE_OEonMS.Size = new System.Drawing.Size(255, 22);
+            this.TSM_AddOEonSelectOE_OEonMS.Size = new System.Drawing.Size(358, 32);
             this.TSM_AddOEonSelectOE_OEonMS.Text = "Создать ОЭ на базе выделенного";
             this.TSM_AddOEonSelectOE_OEonMS.Click += new System.EventHandler(this.TSM_AddOEonSelectOE_OEonMS_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(252, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(355, 6);
             // 
             // TSM_Delete_OEonMS
             // 
             this.TSM_Delete_OEonMS.Name = "TSM_Delete_OEonMS";
-            this.TSM_Delete_OEonMS.Size = new System.Drawing.Size(255, 22);
+            this.TSM_Delete_OEonMS.Size = new System.Drawing.Size(358, 32);
             this.TSM_Delete_OEonMS.Text = "Удалить";
             this.TSM_Delete_OEonMS.Click += new System.EventHandler(this.bDeleteMarkaOEonMS_Click);
             // 
@@ -1127,10 +1141,10 @@
             // 
             this.tPVedomostMSh.Controls.Add(this.groupBox14);
             this.tPVedomostMSh.Controls.Add(this.groupBox15);
-            this.tPVedomostMSh.Location = new System.Drawing.Point(4, 25);
+            this.tPVedomostMSh.Location = new System.Drawing.Point(4, 34);
             this.tPVedomostMSh.Name = "tPVedomostMSh";
             this.tPVedomostMSh.Padding = new System.Windows.Forms.Padding(3);
-            this.tPVedomostMSh.Size = new System.Drawing.Size(1082, 536);
+            this.tPVedomostMSh.Size = new System.Drawing.Size(1082, 527);
             this.tPVedomostMSh.TabIndex = 3;
             this.tPVedomostMSh.Text = "Ведомость МШ";
             this.tPVedomostMSh.UseVisualStyleBackColor = true;
@@ -1141,7 +1155,7 @@
             this.groupBox14.Controls.Add(this.bEditMSh);
             this.groupBox14.Controls.Add(this.bAddMSh);
             this.groupBox14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox14.Location = new System.Drawing.Point(3, 478);
+            this.groupBox14.Location = new System.Drawing.Point(3, 469);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(1076, 55);
             this.groupBox14.TabIndex = 5;
@@ -1201,9 +1215,10 @@
             this.colHNoteMSh});
             this.lV_VedomostMSh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lV_VedomostMSh.FullRowSelect = true;
-            this.lV_VedomostMSh.Location = new System.Drawing.Point(3, 18);
+            this.lV_VedomostMSh.HideSelection = false;
+            this.lV_VedomostMSh.Location = new System.Drawing.Point(3, 26);
             this.lV_VedomostMSh.Name = "lV_VedomostMSh";
-            this.lV_VedomostMSh.Size = new System.Drawing.Size(1070, 448);
+            this.lV_VedomostMSh.Size = new System.Drawing.Size(1070, 440);
             this.lV_VedomostMSh.TabIndex = 0;
             this.lV_VedomostMSh.UseCompatibleStateImageBehavior = false;
             this.lV_VedomostMSh.View = System.Windows.Forms.View.Details;
@@ -1253,10 +1268,10 @@
             // 
             this.tPVedomostMM.Controls.Add(this.groupBox17);
             this.tPVedomostMM.Controls.Add(this.groupBox18);
-            this.tPVedomostMM.Location = new System.Drawing.Point(4, 25);
+            this.tPVedomostMM.Location = new System.Drawing.Point(4, 34);
             this.tPVedomostMM.Name = "tPVedomostMM";
             this.tPVedomostMM.Padding = new System.Windows.Forms.Padding(3);
-            this.tPVedomostMM.Size = new System.Drawing.Size(1082, 536);
+            this.tPVedomostMM.Size = new System.Drawing.Size(1082, 527);
             this.tPVedomostMM.TabIndex = 4;
             this.tPVedomostMM.Text = "Ведомость ММ";
             this.tPVedomostMM.UseVisualStyleBackColor = true;
@@ -1267,7 +1282,7 @@
             this.groupBox17.Controls.Add(this.bEditMM);
             this.groupBox17.Controls.Add(this.bAddMM);
             this.groupBox17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox17.Location = new System.Drawing.Point(3, 478);
+            this.groupBox17.Location = new System.Drawing.Point(3, 469);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Size = new System.Drawing.Size(1076, 55);
             this.groupBox17.TabIndex = 8;
@@ -1328,9 +1343,10 @@
             this.colHNoteMM});
             this.lV_VedomostMM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lV_VedomostMM.FullRowSelect = true;
-            this.lV_VedomostMM.Location = new System.Drawing.Point(3, 18);
+            this.lV_VedomostMM.HideSelection = false;
+            this.lV_VedomostMM.Location = new System.Drawing.Point(3, 26);
             this.lV_VedomostMM.Name = "lV_VedomostMM";
-            this.lV_VedomostMM.Size = new System.Drawing.Size(1070, 448);
+            this.lV_VedomostMM.Size = new System.Drawing.Size(1070, 440);
             this.lV_VedomostMM.TabIndex = 0;
             this.lV_VedomostMM.UseCompatibleStateImageBehavior = false;
             this.lV_VedomostMM.View = System.Windows.Forms.View.Details;
@@ -1360,7 +1376,7 @@
             // 
             // colHMassMetizMM
             // 
-            this.colHMassMetizMM.Text = "Вес, кгс";
+            this.colHMassMetizMM.Text = "Масса, кг";
             this.colHMassMetizMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colHMassMetizMM.Width = 65;
             // 
@@ -1386,10 +1402,10 @@
             // 
             this.tPSpecifOE.Controls.Add(this.groupBox26);
             this.tPSpecifOE.Controls.Add(this.groupBox25);
-            this.tPSpecifOE.Location = new System.Drawing.Point(4, 25);
+            this.tPSpecifOE.Location = new System.Drawing.Point(4, 34);
             this.tPSpecifOE.Name = "tPSpecifOE";
             this.tPSpecifOE.Padding = new System.Windows.Forms.Padding(3);
-            this.tPSpecifOE.Size = new System.Drawing.Size(1082, 536);
+            this.tPSpecifOE.Size = new System.Drawing.Size(1082, 527);
             this.tPSpecifOE.TabIndex = 5;
             this.tPSpecifOE.Text = "Спецификация ОЭ";
             this.tPSpecifOE.UseVisualStyleBackColor = true;
@@ -1421,9 +1437,9 @@
             this.lVSpecifOE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lVSpecifOE.FullRowSelect = true;
             this.lVSpecifOE.HideSelection = false;
-            this.lVSpecifOE.Location = new System.Drawing.Point(3, 18);
+            this.lVSpecifOE.Location = new System.Drawing.Point(3, 26);
             this.lVSpecifOE.Name = "lVSpecifOE";
-            this.lVSpecifOE.Size = new System.Drawing.Size(1070, 448);
+            this.lVSpecifOE.Size = new System.Drawing.Size(1070, 440);
             this.lVSpecifOE.TabIndex = 1;
             this.lVSpecifOE.UseCompatibleStateImageBehavior = false;
             this.lVSpecifOE.View = System.Windows.Forms.View.Details;
@@ -1459,13 +1475,13 @@
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Вес одной детали, кгс";
+            this.columnHeader6.Text = "Масса одной детали, кг";
             this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader6.Width = 158;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Вес всех, кгс";
+            this.columnHeader7.Text = "Масса всех, кг";
             this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader7.Width = 100;
             // 
@@ -1483,23 +1499,24 @@
             // 
             // cM_SpecifOE
             // 
+            this.cM_SpecifOE.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.cM_SpecifOE.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMI_SpOE_OpenModel,
             this.TSMI_SpOE_UpdateMassPart});
             this.cM_SpecifOE.Name = "cM_SpecifOE";
-            this.cM_SpecifOE.Size = new System.Drawing.Size(166, 48);
+            this.cM_SpecifOE.Size = new System.Drawing.Size(221, 68);
             // 
             // TSMI_SpOE_OpenModel
             // 
             this.TSMI_SpOE_OpenModel.Name = "TSMI_SpOE_OpenModel";
-            this.TSMI_SpOE_OpenModel.Size = new System.Drawing.Size(165, 22);
+            this.TSMI_SpOE_OpenModel.Size = new System.Drawing.Size(220, 32);
             this.TSMI_SpOE_OpenModel.Text = "Открыть модель";
             this.TSMI_SpOE_OpenModel.Click += new System.EventHandler(this.TSMI_SpOE_OpenModel_Click);
             // 
             // TSMI_SpOE_UpdateMassPart
             // 
             this.TSMI_SpOE_UpdateMassPart.Name = "TSMI_SpOE_UpdateMassPart";
-            this.TSMI_SpOE_UpdateMassPart.Size = new System.Drawing.Size(165, 22);
+            this.TSMI_SpOE_UpdateMassPart.Size = new System.Drawing.Size(220, 32);
             this.TSMI_SpOE_UpdateMassPart.Text = "Обновить вес";
             this.TSMI_SpOE_UpdateMassPart.Click += new System.EventHandler(this.TSMI_SpOE_UpdateMassPart_Click);
             // 
@@ -1510,7 +1527,7 @@
             this.groupBox25.Controls.Add(this.bEditPartMarka);
             this.groupBox25.Controls.Add(this.bAddPartMarka);
             this.groupBox25.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox25.Location = new System.Drawing.Point(3, 478);
+            this.groupBox25.Location = new System.Drawing.Point(3, 469);
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.Size = new System.Drawing.Size(1076, 55);
             this.groupBox25.TabIndex = 13;
@@ -1561,10 +1578,10 @@
             // 
             this.tPVedomostSvarZavodSh.Controls.Add(this.groupBox5);
             this.tPVedomostSvarZavodSh.Controls.Add(this.groupBox20);
-            this.tPVedomostSvarZavodSh.Location = new System.Drawing.Point(4, 25);
+            this.tPVedomostSvarZavodSh.Location = new System.Drawing.Point(4, 34);
             this.tPVedomostSvarZavodSh.Name = "tPVedomostSvarZavodSh";
             this.tPVedomostSvarZavodSh.Padding = new System.Windows.Forms.Padding(3);
-            this.tPVedomostSvarZavodSh.Size = new System.Drawing.Size(1082, 536);
+            this.tPVedomostSvarZavodSh.Size = new System.Drawing.Size(1082, 527);
             this.tPVedomostSvarZavodSh.TabIndex = 6;
             this.tPVedomostSvarZavodSh.Text = "Ведомость СЗШ";
             this.tPVedomostSvarZavodSh.UseVisualStyleBackColor = true;
@@ -1589,9 +1606,10 @@
             this.colHNoteSvarZavodSh});
             this.lV_VedomostSvarZavodSh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lV_VedomostSvarZavodSh.FullRowSelect = true;
-            this.lV_VedomostSvarZavodSh.Location = new System.Drawing.Point(3, 18);
+            this.lV_VedomostSvarZavodSh.HideSelection = false;
+            this.lV_VedomostSvarZavodSh.Location = new System.Drawing.Point(3, 26);
             this.lV_VedomostSvarZavodSh.Name = "lV_VedomostSvarZavodSh";
-            this.lV_VedomostSvarZavodSh.Size = new System.Drawing.Size(1070, 448);
+            this.lV_VedomostSvarZavodSh.Size = new System.Drawing.Size(1070, 440);
             this.lV_VedomostSvarZavodSh.TabIndex = 1;
             this.lV_VedomostSvarZavodSh.UseCompatibleStateImageBehavior = false;
             this.lV_VedomostSvarZavodSh.View = System.Windows.Forms.View.Details;
@@ -1625,7 +1643,7 @@
             this.groupBox20.Controls.Add(this.bEditSvarZavodSh);
             this.groupBox20.Controls.Add(this.bAddSvarZavodSh);
             this.groupBox20.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox20.Location = new System.Drawing.Point(3, 478);
+            this.groupBox20.Location = new System.Drawing.Point(3, 469);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Size = new System.Drawing.Size(1076, 55);
             this.groupBox20.TabIndex = 17;
@@ -1666,7 +1684,7 @@
             // 
             this.groupBox4.Controls.Add(this.richTextBox2);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox4.Location = new System.Drawing.Point(3, 621);
+            this.groupBox4.Location = new System.Drawing.Point(3, 612);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(1090, 87);
             this.groupBox4.TabIndex = 7;
@@ -1677,11 +1695,11 @@
             // 
             this.richTextBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(3, 18);
+            this.richTextBox2.Location = new System.Drawing.Point(3, 26);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox2.Size = new System.Drawing.Size(1084, 66);
+            this.richTextBox2.Size = new System.Drawing.Size(1084, 58);
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "Краткие обозначения: \nМС - монтажная схема; ОЭ - отправочный элемент; МШ - монтаж" +
     "ные швы; РЧД - рабочие чертежи деталей;\nММ - монтажные метизы; МК - металлоконст" +
@@ -1689,13 +1707,15 @@
             // 
             // menuMain
             // 
+            this.menuMain.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuMain.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MM1_Main,
             this.сервисToolStripMenuItem,
             this.средаToolStripMenuItem});
             this.menuMain.Location = new System.Drawing.Point(0, 0);
             this.menuMain.Name = "menuMain";
-            this.menuMain.Size = new System.Drawing.Size(1104, 24);
+            this.menuMain.Size = new System.Drawing.Size(1104, 33);
             this.menuMain.TabIndex = 8;
             this.menuMain.Text = "Главное меню";
             // 
@@ -1707,32 +1727,32 @@
             this.toolStripMenuItem1,
             this.MM1_2_CloseForm});
             this.MM1_Main.Name = "MM1_Main";
-            this.MM1_Main.Size = new System.Drawing.Size(63, 20);
+            this.MM1_Main.Size = new System.Drawing.Size(92, 29);
             this.MM1_Main.Text = "Главная";
             // 
             // MM1_1_SaveProj
             // 
             this.MM1_1_SaveProj.Name = "MM1_1_SaveProj";
-            this.MM1_1_SaveProj.Size = new System.Drawing.Size(132, 22);
+            this.MM1_1_SaveProj.Size = new System.Drawing.Size(200, 34);
             this.MM1_1_SaveProj.Text = "Сохранить";
             this.MM1_1_SaveProj.Click += new System.EventHandler(this.bSaveProj_Click);
             // 
             // MM1_3_UpdateProj
             // 
             this.MM1_3_UpdateProj.Name = "MM1_3_UpdateProj";
-            this.MM1_3_UpdateProj.Size = new System.Drawing.Size(132, 22);
+            this.MM1_3_UpdateProj.Size = new System.Drawing.Size(200, 34);
             this.MM1_3_UpdateProj.Text = "Обновить";
             this.MM1_3_UpdateProj.Click += new System.EventHandler(this.bUpdateProj_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(129, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(197, 6);
             // 
             // MM1_2_CloseForm
             // 
             this.MM1_2_CloseForm.Name = "MM1_2_CloseForm";
-            this.MM1_2_CloseForm.Size = new System.Drawing.Size(132, 22);
+            this.MM1_2_CloseForm.Size = new System.Drawing.Size(200, 34);
             this.MM1_2_CloseForm.Text = "Выход";
             this.MM1_2_CloseForm.Click += new System.EventHandler(this.MM1_2_CloseForm_Click);
             // 
@@ -1741,13 +1761,13 @@
             this.сервисToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMI_SettingProj});
             this.сервисToolStripMenuItem.Name = "сервисToolStripMenuItem";
-            this.сервисToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.сервисToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.сервисToolStripMenuItem.Text = "Проект";
             // 
             // TSMI_SettingProj
             // 
             this.TSMI_SettingProj.Name = "TSMI_SettingProj";
-            this.TSMI_SettingProj.Size = new System.Drawing.Size(134, 22);
+            this.TSMI_SettingProj.Size = new System.Drawing.Size(202, 34);
             this.TSMI_SettingProj.Text = "Настройки";
             // 
             // средаToolStripMenuItem
@@ -1755,13 +1775,13 @@
             this.средаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMI_ConnectSredaModel});
             this.средаToolStripMenuItem.Name = "средаToolStripMenuItem";
-            this.средаToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
+            this.средаToolStripMenuItem.Size = new System.Drawing.Size(220, 29);
             this.средаToolStripMenuItem.Text = "Среда проектирования";
             // 
             // TSMI_ConnectSredaModel
             // 
             this.TSMI_ConnectSredaModel.Name = "TSMI_ConnectSredaModel";
-            this.TSMI_ConnectSredaModel.Size = new System.Drawing.Size(156, 22);
+            this.TSMI_ConnectSredaModel.Size = new System.Drawing.Size(234, 34);
             this.TSMI_ConnectSredaModel.Text = "Подключиться";
             this.TSMI_ConnectSredaModel.Click += new System.EventHandler(this.TSMI_ConnectSredaModel_Click);
             // 
@@ -1799,40 +1819,31 @@
             // 
             // sS_StatusApp
             // 
+            this.sS_StatusApp.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.sS_StatusApp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tSSL_SredaModel,
             this.tlPB_ProgressApp1});
-            this.sS_StatusApp.Location = new System.Drawing.Point(0, 810);
+            this.sS_StatusApp.Location = new System.Drawing.Point(0, 800);
             this.sS_StatusApp.Name = "sS_StatusApp";
-            this.sS_StatusApp.Size = new System.Drawing.Size(1104, 22);
+            this.sS_StatusApp.Size = new System.Drawing.Size(1104, 32);
             this.sS_StatusApp.TabIndex = 11;
             this.sS_StatusApp.Text = "statusStrip1";
             // 
             // tSSL_SredaModel
             // 
             this.tSSL_SredaModel.Name = "tSSL_SredaModel";
-            this.tSSL_SredaModel.Size = new System.Drawing.Size(69, 17);
+            this.tSSL_SredaModel.Size = new System.Drawing.Size(106, 25);
             this.tSSL_SredaModel.Text = "Компас 3D ";
             // 
             // tlPB_ProgressApp1
             // 
             this.tlPB_ProgressApp1.Name = "tlPB_ProgressApp1";
-            this.tlPB_ProgressApp1.Size = new System.Drawing.Size(100, 16);
+            this.tlPB_ProgressApp1.Size = new System.Drawing.Size(100, 24);
             this.tlPB_ProgressApp1.Step = 1;
-            // 
-            // bUpdateMassAllOE
-            // 
-            this.bUpdateMassAllOE.Location = new System.Drawing.Point(440, 20);
-            this.bUpdateMassAllOE.Name = "bUpdateMassAllOE";
-            this.bUpdateMassAllOE.Size = new System.Drawing.Size(155, 25);
-            this.bUpdateMassAllOE.TabIndex = 4;
-            this.bUpdateMassAllOE.Text = "Обновить вес марок";
-            this.bUpdateMassAllOE.UseVisualStyleBackColor = true;
-            this.bUpdateMassAllOE.Click += new System.EventHandler(this.bUpdateMassAllOE_Click);
             // 
             // FormKMD_Proj
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1104, 832);
             this.Controls.Add(this.sS_StatusApp);

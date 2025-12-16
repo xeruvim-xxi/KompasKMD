@@ -172,6 +172,9 @@
     <EmbeddedResource Include="FormMS.resx">
       <DependentUpon>FormMS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPathKMD.resx">
+      <DependentUpon>FormPathKMD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormZSh.resx">
       <DependentUpon>FormZSh.cs</DependentUpon>
     </EmbeddedResource>
