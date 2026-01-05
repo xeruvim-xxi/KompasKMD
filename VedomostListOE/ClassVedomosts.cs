@@ -1333,9 +1333,27 @@ namespace Vedomosts
             {
                 i_p = i_p + 1;
                 EventProjectClass.EventValueProgressHandler((i_p * 100) / kolMM);
-                ((IText)(Table.get_Cell(i, 0).Text)).Str = mm.Name + " " + mm.Diameter;
-                ((IText)(Table.get_Cell(i, 1).Text)).Str = mm.ThicknessPackage.ToString("N2");
-                ((IText)(Table.get_Cell(i, 2).Text)).Str = mm.Length.ToString("N2");
+                ((IText)(Table.get_Cell(i, 0).Text)).Str = mm.Name;
+                string tp;
+                if (mm.ThicknessPackage == 0) 
+                {
+                    tp = "-";
+                } 
+                else 
+                {
+                    tp = mm.ThicknessPackage.ToString("N2");
+                }               
+                ((IText)(Table.get_Cell(i, 1).Text)).Str = tp;
+                string l;
+                if (mm.Length == 0)
+                {
+                    l = "-";
+                }
+                else
+                {
+                    l = mm.Length.ToString("N2");
+                }
+                ((IText)(Table.get_Cell(i, 2).Text)).Str = l;
                 ((IText)(Table.get_Cell(i, 3).Text)).Str = mm.Quantity.ToString();
                 ((IText)(Table.get_Cell(i, 4).Text)).Str = mm.Mass.ToString("N2");
                 ((IText)(Table.get_Cell(i, 5).Text)).Str = mm.GOST;

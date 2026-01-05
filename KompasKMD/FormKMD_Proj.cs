@@ -18,9 +18,6 @@ using Kompas6Constants;
 using Kompas6Constants3D;
 //using KAPITypes;
 using KompasAPI7;
-using SolidWorks.Interop.sldworks;
-using SolidWorks.Interop.swcommands;
-using SolidWorks.Interop.swconst;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -35,6 +32,7 @@ namespace KompasKMD
    
     public partial class FormKMD_Proj  : Form
     {
+
         SettingAppClass SettingApp = new SettingAppClass();
         KompasObject kompas;
         bool flagKompas = false; // true - есть подлючение, false - нет подключения к Компасу
@@ -511,7 +509,7 @@ namespace KompasKMD
 
         private void FillVedomostMM(MMClass mm) // заполнение Ведомости монтажных метизов
         {
-            ListViewItem curLV = new ListViewItem(mm.GetStructMM().Name+" "+ mm.GetStructMM().Diameter);
+            ListViewItem curLV = new ListViewItem(mm.GetStructMM().Name);
             curLV.SubItems.Add(mm.GetStructMM().ThicknessPackage.ToString());
             curLV.SubItems.Add(mm.GetStructMM().Length.ToString());
             curLV.SubItems.Add(mm.GetStructMM().Quantity.ToString());
